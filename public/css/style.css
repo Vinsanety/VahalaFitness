@@ -1,0 +1,41 @@
+* {
+  font-family: "Questrial" !important;
+}
+
+body {
+
+}
+
+nav {
+  background-color: #448AFF !important;
+}
+
+h1 {
+  color: #448AFF;
+}
+
+h5 {
+  color: #6BA2FF;
+}
+
+/* Materialize-CSS Overrides */
+.btn {
+  background-color: #FFF !important;
+  color: #448AFF !important;
+}
+
+.home-container, .videos-container {
+  /* min-height: 100vh; */
+}
+
+.brand-logo {
+  margin-left: 1%;
+}
+
+
+
+
+
+footer {
+  background-color: #448AFF !important;
+}

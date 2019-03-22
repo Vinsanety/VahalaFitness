@@ -1,2 +1,2 @@
 # VahalaFitness
-Vahala Fitness website
+Vahala Fitness website for Matt Vahala Training.

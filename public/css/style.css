@@ -18,24 +18,40 @@ h5 {
   color: #6BA2FF;
 }
 
+
 /* Materialize-CSS Overrides */
 .btn {
   background-color: #FFF !important;
   color: #448AFF !important;
 }
 
-.home-container, .videos-container {
-  /* min-height: 100vh; */
+
+/* Body */
+.home-container, .videos-container, .contact-container {
+  min-height: 100vh;
 }
 
 .brand-logo {
   margin-left: 1%;
 }
 
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
 
 
-
-
+/* Footer */
 footer {
   background-color: #448AFF !important;
+}
+.footer-icon-link {
+  display: inline-block;
+}
+.footer-icon {
+  height: 100%;
+  max-height: 3rem;
+}
+.footer-icon:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.25);
 }

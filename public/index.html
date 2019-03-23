@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import Angular-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <!--Import Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Import ui-router-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
     <!--Import materialize.css-->
@@ -27,6 +27,7 @@
       <nav>
         <div class="nav-wrapper">
           <a ui-sref="home" class="brand-logo center">Vahala Fitness</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="left hide-on-med-and-down">
             <li><a ui-sref="home">Home</a></li>
           </ul>
@@ -37,6 +38,11 @@
         </div>
       </nav>
     </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a ui-sref="home">Home</a></li>
+      <li><a ui-sref="videos">Videos</a></li>
+      <li><a ui-sref="contact">Contact</a></li>
+    </ul>
 
     <div ui-view></div>
 
@@ -48,12 +54,18 @@
             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
+            <h5 class="white-text">Find more at</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li>
+                <a class="footer-icon-link" target="_blank" href="https://www.youtube.com/channel/UCsA3_LdEoXB-iWMrdxmZ-vg?view_as=subscriber">
+                  <img class="footer-icon" src="https://lh3.googleusercontent.com/bA23kq5imaNuoOoR58LCCEhvalaCfnikszVGMulyV1p7HxP1ynkmMDPxLVHqH350gxYikmynPpfU5hlLuBcynXGgJdji6lcEcLQEkNakiNN6oq7xz7bW6_AZnRHyRCN7qDpDmMprWqYS5jgVXn9MUvB15hawXlUeuPRFZ6xrZvZqNanuD8Bhr_U8Mv8dBezqlkIZrtUz1ZqQGVVoF3OS8sNBOpehp8owabL3ZWUt6xrTCOg0aZtwL_S9pvuodCve5Ov82hOTfUrRKhAGTJTMBaD_FyaE3_g6k_TgAwmReuA7VulAPITbGrsz7Ljl6c2zQh176ITPmMh_IwDezm4l4K2hu65kcGXn1v174I-srLtZegGLFxAUGMvZwfeVR1JBugW5RRTW6ZQ3DNa78YHRgRA-pjart_sPH3PInnmifLxe08lNP-p2tRSNpsvIaa_cgGjSQUH0oLo1Vlc1pK7O2yMiuhtSB45LjAh6nLjEOuJssJxcFmEACG2_SIsRXnJMRk51HbnLS2UCbN67j-7hRbnRx7mdOQUgvZsQl339s0OzJyz96S0JChL_YK7I6yMtbNtqf0-VfdZ4e-etgoJkgDzYAhYuNfrDwRDOs1-a3GuHet7pT_mBtMfa5hJDMnNmIzM6TvWgo6X5b0DqmNvHFWr3vMT0bQ=s334-no">
+                </a>
+              </li>
+              <li>
+                <a class="footer-icon-link" href="https://www.instagram.com/mattvahala/" target="_blank">
+                  <img class="footer-icon" src="https://lh3.googleusercontent.com/MxqWxYOvJnK6W3mSnAyvVJVEvNpWCbKz7w8TLVYayrhbEvztcU5ptVRnzsz2BU-BhrPyJtxYbtpiEbN_v_2URUvpIJq-C6OQKH1-xHmrE567efP-IfvzQridMEMcufEcPPRZO51IuVBrOCh-ULfonPlaCC4hUmYpKFyYG6BJBkOj_VAiyvs0NePJwhMAiqJhMIP37HF399MuMuViCZQBssnzd3e_pweoZRL3LqWvnXD3XYzU3uZyZ-zASo_fIW4XQ_MmEkLL-P3--L80kTTZgHWNtEm6OJ78OrdoXev2DLNbA10LmQSNu1Q5E_l8HqX349tvVXo-KjrPDQRrqq5GmNX4dwm4AyiHQpJc3sHZ1OJT08oDVLShkxPnDRPjwQbDnCcyO65Nc8uFLttKikbVjbFRAdDiTWtuVsFg1q9x8xxvjMchDrq5u3ViO7sYzIsMWCcAgtDDykAfFZGJP4L7BRTYSpDDnNcO4GEMae_hGFoKiwLheCKQLHrX578EUGkJxoY6ET9O7Pq49ADp_pilAvJ7oZjCCt3jwY1Ft9zpLkt4rQguqigOBYHaSZMUn3BIK7EKVImhbqkPAioYeqPF9mVVPBaTf7EyxbSJVodThetgIkwA3sLUY_O-6L6yD-EOGGDvX6dwmdYxSqwacSRGz4pxdid6Yw=s512-no">
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -70,5 +82,6 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!--Import materialize.min.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src='js/nav.js'></script>
   </body>
 </html>

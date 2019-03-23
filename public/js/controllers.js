@@ -1,7 +1,6 @@
 app.controller('homeController', function($scope) {
   angular.element(document).ready(function () {
     $(this).scrollTop(0);
-    $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.materialboxed').materialbox();
   });

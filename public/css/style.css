@@ -26,6 +26,13 @@ h5 {
 }
 
 
+/* Nav */
+.sidenav > li > .user-view > .background > img {
+  width: 100%;
+  height: 150%;
+}
+
+
 /* Body */
 .home-container, .videos-container, .contact-container {
   min-height: 100vh;

@@ -1,87 +1,116 @@
 <!DOCTYPE html>
 <html ng-app='VahalaFitness'>
-  <head>
-    <title>Vahala Fitness</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import Angular-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-    <!--Import Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-    <!-- Import ui-router-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js" charset="utf-8"></script>
-    <base href="/">
-  </head>
+<head>
+  <title>Vahala Fitness</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Angular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <!--Import Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <!-- Import ui-router-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <body ng-cloak>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js" charset="utf-8"></script>
+  <base href="/">
+</head>
 
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <a ui-sref="home" class="brand-logo center">Vahala Fitness</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="left hide-on-med-and-down">
-            <li><a ui-sref="home">Home</a></li>
-          </ul>
-          <ul class="right hide-on-med-and-down">
-            <li><a ui-sref="videos">Videos</a></li>
-            <li><a ui-sref="contact">Contact</a></li>
-          </ul>
+<body ng-cloak>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a ui-sref="home" class="brand-logo center">Vahala Fitness</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a ui-sref="home">Home</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a ui-sref="videos">Videos</a></li>
+          <li><a ui-sref="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="slide-out">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="https://lh3.googleusercontent.com/tSJkYEPVEfrYb93jfumN8FMUygqVWPTSIpnxMdgZxCiwIOJrWNtGJqyC0rBRb33o3FQAHW-8tnnGSUE7qV_oZ3i7qurhjmdhCh4yVjO_6vgiWKqpPNvgHTezPUTQP9AzH858oHa3u4tFGZiEzgFnc1c89bRwaa6cJGBaYnBiSr6OuvK4uM3kAp0yXIMZ7SJVlbVmstCSRA3FImVWydhsG-bzkOSfflUMod2IzTPE-QPO6s51BMjmnVTZ_yfBBX6sdSFHDG0RNHCBF0Dqf8NtTKlAMSeX-maQFsE90MTjiiQCUivl8ow9tP8Ra488MQZRsVzxMtdOmbkDXgdmxKQsTNlL-6_Cgqyy0xgs6fljVqssI2fHXHjyO4LiMD02esL2daElsUofLo0UmbIUFtEkRLgx9opK0laU2uoTKJcwpzo12cSsGxbT-tEtJoh8VUo4vhZDeX9oLjhf4I6dHDcLgf2OlXbOU68Ua2ii_qb0al2WJ1GZtQUzDywZZQ7naZRm5ljKQDH9EVb3n835v59whjvlIGdUIfaguavq3bTPZLCmN1fDDbe3qGD_YuUp3qOwy5WswZn0Qx_4B4dvREo_Nuc2veKACCz8yQSGxrIUeMQG9NzwW7bgOMLr9lNYE5s5y_r-XZ8r2B8Y4UBwvUI47TLYILR-Jg=w750-h729-no">
         </div>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobile-nav">
-      <li><a ui-sref="home">Home</a></li>
-      <li><a ui-sref="videos">Videos</a></li>
-      <li><a ui-sref="contact">Contact</a></li>
-    </ul>
+        <a href="#user">
+          <img class="circle" src="https://lh3.googleusercontent.com/-l2Vh72CnnpF328Pal6BKCjT8_CkJO6AfjPFqmkW3FKfLMJoGQAf1FtPjxE6IVGnoY2c6_dmbu_D3zM-nYqmW1qGkC-tBjlADz_Bx6va_3QLcbXSTvGdIUZbiLi2d4iDfXxRPzJPmFvRCeKVfkRkurO1PJsNZg8NUvn3f1vse9rPQrQbRu0U2OrGzfmK-ypSe1Jo7U0td3r8kEOsh_4uwY4QP1xeJH-so0jZGglP-lXR5arl1mzAG5nWNQ6_62poWg-YMMT9fPTeTgP6yELl3X6437XaRnD3rJ4VyxeO94n-A4axo8mHdCYbfRGPLWfJmwbo39ajUqBXzFO0qxq_9wgSUR_sW6Bgq-q4io5ZWGRwq2DQ84OhJukvhaoFvOwRGI9SUD8Z9CVk3A1D9SgBZbtCwRNMfhMplSlmig-kd6mMatmjw_XxRvZyHJApzBLfD0IeWGIQciXTBujFnev7_h-vOB5eJnDgMeCpXL6pyPO98e0AlGDgknqoqV0VZjiOudif2Y5ki8C7JYxg2OLVw53DBE9qJrbKMiIklM6Fsywug83iFQ2MjIEuKjyb_O1HRKMLqZ3Mhv4eyhzjudM3aCw-hbv0B0T3foPzpg5uqXj-72DNdc3hCIH5QTf9D2aCU0DcebtZJUGEQmCgKZh81EX-y62CzQ=w323-h316-no">
+        </a>
+        <a href="#name"><span class="white-text name">Matt Vahala</span></a>
+        <a href="#email"><span class="white-text email">VahalaFitness@gmail.com</span></a>
+      </div>
+    </li>
+    <li>
+      <a ui-sref="home">
+        <i class="material-icons">home</i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a ui-sref="videos">
+        <i class="material-icons">video_library</i>
+        Videos
+      </a>
+    </li>
+    <li>
+      <a ui-sref="contact">
+         <i class="material-icons">contact_phone</i>
+         Contact
+       </a>
+     </li>
+  </ul>
 
-    <div ui-view></div>
+  <div ui-view></div>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Vahala Fitness</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Find more at</h5>
-            <ul>
-              <li>
-                <a class="footer-icon-link" target="_blank" href="https://www.youtube.com/channel/UCsA3_LdEoXB-iWMrdxmZ-vg?view_as=subscriber">
-                  <img class="footer-icon" src="https://lh3.googleusercontent.com/bA23kq5imaNuoOoR58LCCEhvalaCfnikszVGMulyV1p7HxP1ynkmMDPxLVHqH350gxYikmynPpfU5hlLuBcynXGgJdji6lcEcLQEkNakiNN6oq7xz7bW6_AZnRHyRCN7qDpDmMprWqYS5jgVXn9MUvB15hawXlUeuPRFZ6xrZvZqNanuD8Bhr_U8Mv8dBezqlkIZrtUz1ZqQGVVoF3OS8sNBOpehp8owabL3ZWUt6xrTCOg0aZtwL_S9pvuodCve5Ov82hOTfUrRKhAGTJTMBaD_FyaE3_g6k_TgAwmReuA7VulAPITbGrsz7Ljl6c2zQh176ITPmMh_IwDezm4l4K2hu65kcGXn1v174I-srLtZegGLFxAUGMvZwfeVR1JBugW5RRTW6ZQ3DNa78YHRgRA-pjart_sPH3PInnmifLxe08lNP-p2tRSNpsvIaa_cgGjSQUH0oLo1Vlc1pK7O2yMiuhtSB45LjAh6nLjEOuJssJxcFmEACG2_SIsRXnJMRk51HbnLS2UCbN67j-7hRbnRx7mdOQUgvZsQl339s0OzJyz96S0JChL_YK7I6yMtbNtqf0-VfdZ4e-etgoJkgDzYAhYuNfrDwRDOs1-a3GuHet7pT_mBtMfa5hJDMnNmIzM6TvWgo6X5b0DqmNvHFWr3vMT0bQ=s334-no">
-                </a>
-              </li>
-              <li>
-                <a class="footer-icon-link" href="https://www.instagram.com/mattvahala/" target="_blank">
-                  <img class="footer-icon" src="https://lh3.googleusercontent.com/MxqWxYOvJnK6W3mSnAyvVJVEvNpWCbKz7w8TLVYayrhbEvztcU5ptVRnzsz2BU-BhrPyJtxYbtpiEbN_v_2URUvpIJq-C6OQKH1-xHmrE567efP-IfvzQridMEMcufEcPPRZO51IuVBrOCh-ULfonPlaCC4hUmYpKFyYG6BJBkOj_VAiyvs0NePJwhMAiqJhMIP37HF399MuMuViCZQBssnzd3e_pweoZRL3LqWvnXD3XYzU3uZyZ-zASo_fIW4XQ_MmEkLL-P3--L80kTTZgHWNtEm6OJ78OrdoXev2DLNbA10LmQSNu1Q5E_l8HqX349tvVXo-KjrPDQRrqq5GmNX4dwm4AyiHQpJc3sHZ1OJT08oDVLShkxPnDRPjwQbDnCcyO65Nc8uFLttKikbVjbFRAdDiTWtuVsFg1q9x8xxvjMchDrq5u3ViO7sYzIsMWCcAgtDDykAfFZGJP4L7BRTYSpDDnNcO4GEMae_hGFoKiwLheCKQLHrX578EUGkJxoY6ET9O7Pq49ADp_pilAvJ7oZjCCt3jwY1Ft9zpLkt4rQguqigOBYHaSZMUn3BIK7EKVImhbqkPAioYeqPF9mVVPBaTf7EyxbSJVodThetgIkwA3sLUY_O-6L6yD-EOGGDvX6dwmdYxSqwacSRGz4pxdid6Yw=s512-no">
-                </a>
-              </li>
-            </ul>
-          </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Vahala Fitness</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Find more at</h5>
+          <ul>
+            <li>
+              <a class="footer-icon-link" target="_blank" href="https://www.youtube.com/channel/UCsA3_LdEoXB-iWMrdxmZ-vg?view_as=subscriber">
+                <img class="footer-icon" src="https://lh3.googleusercontent.com/bA23kq5imaNuoOoR58LCCEhvalaCfnikszVGMulyV1p7HxP1ynkmMDPxLVHqH350gxYikmynPpfU5hlLuBcynXGgJdji6lcEcLQEkNakiNN6oq7xz7bW6_AZnRHyRCN7qDpDmMprWqYS5jgVXn9MUvB15hawXlUeuPRFZ6xrZvZqNanuD8Bhr_U8Mv8dBezqlkIZrtUz1ZqQGVVoF3OS8sNBOpehp8owabL3ZWUt6xrTCOg0aZtwL_S9pvuodCve5Ov82hOTfUrRKhAGTJTMBaD_FyaE3_g6k_TgAwmReuA7VulAPITbGrsz7Ljl6c2zQh176ITPmMh_IwDezm4l4K2hu65kcGXn1v174I-srLtZegGLFxAUGMvZwfeVR1JBugW5RRTW6ZQ3DNa78YHRgRA-pjart_sPH3PInnmifLxe08lNP-p2tRSNpsvIaa_cgGjSQUH0oLo1Vlc1pK7O2yMiuhtSB45LjAh6nLjEOuJssJxcFmEACG2_SIsRXnJMRk51HbnLS2UCbN67j-7hRbnRx7mdOQUgvZsQl339s0OzJyz96S0JChL_YK7I6yMtbNtqf0-VfdZ4e-etgoJkgDzYAhYuNfrDwRDOs1-a3GuHet7pT_mBtMfa5hJDMnNmIzM6TvWgo6X5b0DqmNvHFWr3vMT0bQ=s334-no">
+              </a>
+            </li>
+            <li>
+              <a class="footer-icon-link" href="https://www.instagram.com/mattvahala/" target="_blank">
+                <img class="footer-icon" src="https://lh3.googleusercontent.com/MxqWxYOvJnK6W3mSnAyvVJVEvNpWCbKz7w8TLVYayrhbEvztcU5ptVRnzsz2BU-BhrPyJtxYbtpiEbN_v_2URUvpIJq-C6OQKH1-xHmrE567efP-IfvzQridMEMcufEcPPRZO51IuVBrOCh-ULfonPlaCC4hUmYpKFyYG6BJBkOj_VAiyvs0NePJwhMAiqJhMIP37HF399MuMuViCZQBssnzd3e_pweoZRL3LqWvnXD3XYzU3uZyZ-zASo_fIW4XQ_MmEkLL-P3--L80kTTZgHWNtEm6OJ78OrdoXev2DLNbA10LmQSNu1Q5E_l8HqX349tvVXo-KjrPDQRrqq5GmNX4dwm4AyiHQpJc3sHZ1OJT08oDVLShkxPnDRPjwQbDnCcyO65Nc8uFLttKikbVjbFRAdDiTWtuVsFg1q9x8xxvjMchDrq5u3ViO7sYzIsMWCcAgtDDykAfFZGJP4L7BRTYSpDDnNcO4GEMae_hGFoKiwLheCKQLHrX578EUGkJxoY6ET9O7Pq49ADp_pilAvJ7oZjCCt3jwY1Ft9zpLkt4rQguqigOBYHaSZMUn3BIK7EKVImhbqkPAioYeqPF9mVVPBaTf7EyxbSJVodThetgIkwA3sLUY_O-6L6yD-EOGGDvX6dwmdYxSqwacSRGz4pxdid6Yw=s512-no">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
         © 2019 Vahala Designs
         <a class="grey-text text-lighten-4 right" href="https://VinceVahala.com" target="_blank">Vahala Designs</a>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!--Import jQuery-->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <!--Import materialize.min.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src='js/nav.js'></script>
-  </body>
+  <!--Import jQuery-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!--Import materialize.min.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src='js/nav.js'></script>
+</body>
+
 </html>

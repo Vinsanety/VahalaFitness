@@ -31,15 +31,20 @@ h5 {
   width: 100%;
   height: 150%;
 }
+.brand-logo {
+  margin-left: 1%;
+}
+
+@media only screen and (max-width: 992px) {
+  .brand-logo {
+    width: 100%;
+  }
+}
 
 
 /* Body */
 .home-container, .videos-container, .contact-container {
   min-height: 100vh;
-}
-
-.brand-logo {
-  margin-left: 1%;
 }
 
 .material-icons {

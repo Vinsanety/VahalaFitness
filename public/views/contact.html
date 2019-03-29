@@ -7,12 +7,12 @@
     <div class="row">
       <form class="col s12" method="POST" action="https://formspree.io/vahalafitness@gmail.com">
         <div class="row">
-          <div class="input-field col s6">
+          <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">account_circle</i>
             <input id="name" type="text" name="Name">
             <label for="name">First Name</label>
           </div>
-          <div class="input-field col s6">
+          <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">email</i>
             <input id="email" type="email" class="validate" name="Email">
             <label for="email">Email</label>
@@ -20,12 +20,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s6">
+          <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">date_range</i>
             <input type="text" class="datepicker" name="Date">
             <label for="datepicker">Preferred dates?</label>
           </div>
-          <div class="input-field col s6">
+          <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">access_time</i>
             <input type="text" class="timepicker" name="Time">
             <label for="timepicker">Preferred time?</label>
@@ -39,11 +39,12 @@
             <label for="contactTextArea">What would you like to improve?</label>
           </div>
         </div>
+        <button class="btn waves-effect waves-light right" onclick="M.toast({html: 'Message sent', displayLength: 5000})" type="submit">
+          <input type='submit' value='Send Message'>
+          <i class="material-icons right">send</i>
+        </button>
+        <input type="hidden" name="_next" value="/contact"/>
       </form>
-      <button class="btn waves-effect waves-light right" onclick="M.toast({html: 'Message sent', displayLength: 5000})" type="submit" name="action">
-        <input type='submit' value='Send Message'>
-        <i class="material-icons right">send</i>
-      </button>
     </div>
   </div>
 </div>

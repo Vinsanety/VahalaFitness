@@ -47,6 +47,18 @@ h5 {
   min-height: 100vh;
 }
 
+.videos-container .materialboxed {
+  width: 100%;
+}
+
+.card-materialboxed-trigger i {
+  transition: 0.25s ease-in-out;
+}
+.card-materialboxed-trigger i:hover {
+  color: blue;
+  background-color: white;
+}
+
 .material-icons {
   font-family: 'Material Icons' !important;
 }

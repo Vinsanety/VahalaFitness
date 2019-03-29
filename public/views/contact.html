@@ -3,37 +3,45 @@
 
   <div class="container">
     <h5>Let's get fit! Tell me your goals</h5>
+    <br>
     <div class="row">
-      <form class="col s12">
+      <form class="col s12" method="POST" action="https://formspree.io/vahalafitness@gmail.com">
         <div class="row">
           <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
+            <i class="material-icons prefix" id="contact-form-icons">account_circle</i>
+            <input id="name" type="text" name="Name">
+            <label for="name">First Name</label>
           </div>
           <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="email" type="email" class="validate">
+            <i class="material-icons prefix" id="contact-form-icons">email</i>
+            <input id="email" type="email" class="validate" name="Email">
             <label for="email">Email</label>
-          </div>
-          <div class="input-field col s6">
-            <input type="text" class="timepicker">
-            <label for="timepicker">Preferred time?</label>
-            <!-- <input type="text" class="datepicker"> -->
+            <span class="helper-text" data-error="Please enter a valid email address" data-success="Valid email"></span>
           </div>
         </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix" id="contact-form-icons">date_range</i>
+            <input type="text" class="datepicker" name="Date">
+            <label for="datepicker">Preferred dates?</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix" id="contact-form-icons">access_time</i>
+            <input type="text" class="timepicker" name="Time">
+            <label for="timepicker">Preferred time?</label>
+          </div>
+        </div>
+        <br>
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="contactTextArea" class="materialize-textarea" data-length="420"></textarea>
+            <i class="material-icons prefix" id="contact-form-icons">create</i>
+            <textarea id="contactTextArea" type="text" class="materialize-textarea" name="Message" data-length="420"></textarea>
             <label for="contactTextArea">What would you like to improve?</label>
           </div>
         </div>
       </form>
-      <button onclick="M.toast({html: 'Message sent'})" class="btn right" type="submit" name="action">Send message
+      <button class="btn waves-effect waves-light right" onclick="M.toast({html: 'Message sent', displayLength: 5000})" type="submit" name="action">
+        <input type='submit' value='Send Message'>
         <i class="material-icons right">send</i>
       </button>
     </div>

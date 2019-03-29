@@ -21,8 +21,50 @@ h5 {
 
 /* Materialize-CSS Overrides */
 .btn {
-  background-color: #FFF !important;
+  background-color: #448AFF !important;
+}
+.btn input, .btn textarea {
+  color: #FFF !important;
+}
+/* label focus color */
+.input-field input:focus + label, .input-field textarea:focus + label {
+ color: #448AFF !important;
+}
+/* label underline focus color */
+.input-field input:focus, .input-field textarea:focus {
+ border-bottom: 1px solid #448AFF !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: #448AFF !important;
+}
+/* datepicker */
+.datepicker-date-display {
+  background-color: #448AFF !important;
+}
+/* datepicker submit buttons */
+.is-selected, .datepicker-cancel, .datepicker-done {
   color: #448AFF !important;
+}
+/* datepicker slected values */
+.is-today, .is-selected {
+  color: #FFF !important;
+  background-color: #488AFF !important;
+}
+/* datepicker buttons */
+.month-prev:focus, .month-next:focus {
+  background-color: #448AFF !important;
+}
+/* datepicker dropdown */
+.dropdown-content span {
+  color: #488AFF !important;
+}
+/* timepicker background */
+.timepicker-digital-display, .time-picker-dial {
+  background-color: #488AFF !important;
+}
+.timepicker-close {
+  color: #488AFF !important;
 }
 
 

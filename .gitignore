@@ -1,2 +1,5 @@
+# Caching
+.firebase
+
 # Dependencies
 **/node_modules/**

@@ -89,6 +89,12 @@ h5 {
   min-height: 100vh;
 }
 
+.home-container .home-intro {
+  text-align: center;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+}
+
 .videos-container .materialboxed {
   width: 100%;
 }

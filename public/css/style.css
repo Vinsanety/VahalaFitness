@@ -1,3 +1,8 @@
+/* Global */
+:root {
+  font-size: initial;
+}
+
 * {
   font-family: "Questrial" !important;
 }
@@ -12,16 +17,33 @@ nav {
 
 h1 {
   color: #448AFF;
+  margin: 2.8rem 0 1.875rem 0
 }
 
 h5 {
   color: #6BA2FF;
 }
 
+.text-link:hover, .text-link:focus {
+  text-decoration: underline;
+}
+
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
+
 
 /* Materialize-CSS Overrides */
 .btn {
   background-color: #448AFF !important;
+  min-width: 10rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.btn:hover, .btn:focus {
+  color: #448AFF;
+  background-color: #FFF !important;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19) !important;
 }
 .btn input, .btn textarea {
   color: #FFF !important;
@@ -69,12 +91,22 @@ h5 {
 
 
 /* Nav */
+nav ul a:focus {
+  background-color: rgba(0,0,0,0.1);
+}
+
 .sidenav > li > .user-view > .background > img {
   width: 100%;
   height: 150%;
 }
 .brand-logo {
   margin-left: 1%;
+}
+
+.brand-logo:hover, .brand-logo:focus {
+  padding: 0 1rem;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.1);
 }
 
 @media only screen and (max-width: 992px) {
@@ -91,7 +123,7 @@ h5 {
 
 .home-container .home-intro {
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   letter-spacing: 1px;
 }
 
@@ -107,10 +139,6 @@ h5 {
   background-color: white;
 }
 
-.material-icons {
-  font-family: 'Material Icons' !important;
-}
-
 
 /* Footer */
 footer {
@@ -118,6 +146,10 @@ footer {
 }
 .footer-icon-link {
   display: inline-block;
+}
+.footer-icon-link:focus {
+  transition: all .2s ease-in-out;
+  transform: scale(1.25);
 }
 .footer-icon {
   height: 100%;

@@ -1,16 +1,14 @@
 <div class="contact-container">
   <h1 class="center">Contact Matt</h1>
-
   <div class="container">
-    <h5>Let's get fit! Tell me your goals</h5>
-    <br>
+    <h5>Let's work! Tell me your goals</h5>
     <div class="row">
       <form class="col s12" method="POST" action="https://formspree.io/vahalafitness@gmail.com">
         <div class="row">
           <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">account_circle</i>
             <input id="name" type="text" name="Name">
-            <label for="name">First Name</label>
+            <label for="name">Name</label>
           </div>
           <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">email</i>
@@ -18,8 +16,6 @@
             <label for="email">Email</label>
             <span class="helper-text" data-error="Please enter a valid email address" data-success="Valid email"></span>
           </div>
-        </div>
-        <div class="row">
           <div class="input-field col s12 m6">
             <i class="material-icons prefix" id="contact-form-icons">date_range</i>
             <input type="text" class="datepicker" name="Date">
@@ -30,9 +26,6 @@
             <input type="text" class="timepicker" name="Time">
             <label for="timepicker">Preferred time?</label>
           </div>
-        </div>
-        <br>
-        <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix" id="contact-form-icons">create</i>
             <textarea id="contactTextArea" type="text" class="materialize-textarea" name="Message" data-length="420"></textarea>
@@ -40,7 +33,7 @@
           </div>
         </div>
         <button class="btn waves-effect waves-light right" onclick="M.toast({html: 'Message sent', displayLength: 5000})" type="submit">
-          <input type='submit' value='Send Message'>
+          <input type='submit' value="">Send Message
           <i class="material-icons right">send</i>
         </button>
         <input type="hidden" name="_next" value="/contact"/>

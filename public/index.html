@@ -27,7 +27,7 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a ui-sref="home" class="brand-logo center">Vahala Fitness</a>
+        <a ui-sref="home" class="brand-logo center tabindex-hidden-link">Vahala Fitness</a>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="left hide-on-med-and-down">
           <li><a ui-sref="home">Home</a></li>
@@ -45,27 +45,27 @@
         <div class="background">
           <img src="https://lh3.googleusercontent.com/tSJkYEPVEfrYb93jfumN8FMUygqVWPTSIpnxMdgZxCiwIOJrWNtGJqyC0rBRb33o3FQAHW-8tnnGSUE7qV_oZ3i7qurhjmdhCh4yVjO_6vgiWKqpPNvgHTezPUTQP9AzH858oHa3u4tFGZiEzgFnc1c89bRwaa6cJGBaYnBiSr6OuvK4uM3kAp0yXIMZ7SJVlbVmstCSRA3FImVWydhsG-bzkOSfflUMod2IzTPE-QPO6s51BMjmnVTZ_yfBBX6sdSFHDG0RNHCBF0Dqf8NtTKlAMSeX-maQFsE90MTjiiQCUivl8ow9tP8Ra488MQZRsVzxMtdOmbkDXgdmxKQsTNlL-6_Cgqyy0xgs6fljVqssI2fHXHjyO4LiMD02esL2daElsUofLo0UmbIUFtEkRLgx9opK0laU2uoTKJcwpzo12cSsGxbT-tEtJoh8VUo4vhZDeX9oLjhf4I6dHDcLgf2OlXbOU68Ua2ii_qb0al2WJ1GZtQUzDywZZQ7naZRm5ljKQDH9EVb3n835v59whjvlIGdUIfaguavq3bTPZLCmN1fDDbe3qGD_YuUp3qOwy5WswZn0Qx_4B4dvREo_Nuc2veKACCz8yQSGxrIUeMQG9NzwW7bgOMLr9lNYE5s5y_r-XZ8r2B8Y4UBwvUI47TLYILR-Jg=w750-h729-no">
         </div>
-        <a href="#user">
+        <a class="tabindex-hidden-link" ui-sref="home">
           <img class="circle" src="https://lh3.googleusercontent.com/-l2Vh72CnnpF328Pal6BKCjT8_CkJO6AfjPFqmkW3FKfLMJoGQAf1FtPjxE6IVGnoY2c6_dmbu_D3zM-nYqmW1qGkC-tBjlADz_Bx6va_3QLcbXSTvGdIUZbiLi2d4iDfXxRPzJPmFvRCeKVfkRkurO1PJsNZg8NUvn3f1vse9rPQrQbRu0U2OrGzfmK-ypSe1Jo7U0td3r8kEOsh_4uwY4QP1xeJH-so0jZGglP-lXR5arl1mzAG5nWNQ6_62poWg-YMMT9fPTeTgP6yELl3X6437XaRnD3rJ4VyxeO94n-A4axo8mHdCYbfRGPLWfJmwbo39ajUqBXzFO0qxq_9wgSUR_sW6Bgq-q4io5ZWGRwq2DQ84OhJukvhaoFvOwRGI9SUD8Z9CVk3A1D9SgBZbtCwRNMfhMplSlmig-kd6mMatmjw_XxRvZyHJApzBLfD0IeWGIQciXTBujFnev7_h-vOB5eJnDgMeCpXL6pyPO98e0AlGDgknqoqV0VZjiOudif2Y5ki8C7JYxg2OLVw53DBE9qJrbKMiIklM6Fsywug83iFQ2MjIEuKjyb_O1HRKMLqZ3Mhv4eyhzjudM3aCw-hbv0B0T3foPzpg5uqXj-72DNdc3hCIH5QTf9D2aCU0DcebtZJUGEQmCgKZh81EX-y62CzQ=w323-h316-no">
         </a>
-        <a href="#name"><span class="white-text name">Matt Vahala</span></a>
-        <a href="#email"><span class="white-text email">VahalaFitness@gmail.com</span></a>
+        <span class="white-text name">Matt Vahala</span>
+        <a class="tabindex-hidden-link" href="mailto:VahalaFitness@gmail.com"><span class="white-text email">VahalaFitness@gmail.com</span></a>
       </div>
     </li>
     <li>
-      <a ui-sref="home">
+      <a class="tabindex-hidden-link" ui-sref="home">
         <i class="material-icons">home</i>
         Home
       </a>
     </li>
     <li>
-      <a ui-sref="videos">
+      <a class="tabindex-hidden-link" ui-sref="videos">
         <i class="material-icons">video_library</i>
         Videos
       </a>
     </li>
     <li>
-      <a ui-sref="contact">
+      <a class="tabindex-hidden-link" ui-sref="contact">
          <i class="material-icons">contact_phone</i>
          Contact
        </a>
@@ -80,6 +80,9 @@
         <div class="col l6 s12">
           <h5 class="white-text">Vahala Fitness</h5>
           <p class="grey-text text-lighten-4">Training and Coaching the Greater Orlando Area</p>
+          <p class="grey-text text-lighten-4">
+            <a class="grey-text text-lighten-4 text-link" href="mailto:VahalaFitness@gmail.com">VahalaFitness@gmail.com</a>
+          </p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">More Vahala Fitness</h5>
@@ -101,7 +104,7 @@
     <div class="footer-copyright">
       <div class="container">
         © 2019 Vahala Designs
-        <a class="grey-text text-lighten-4 right" href="https://VinceVahala.com" target="_blank">Vahala Designs</a>
+        <a class="grey-text text-lighten-4 right text-link" href="https://VinceVahala.com" target="_blank">Vahala Designs</a>
       </div>
     </div>
   </footer>

@@ -4,4 +4,5 @@ $( document ).ready(function(){
   .on('click tap', 'li a', () => {
       $('.sidenav').sidenav('close');
   });
+  $('.tabindex-hidden-link').attr('tabindex', '-1');
 });

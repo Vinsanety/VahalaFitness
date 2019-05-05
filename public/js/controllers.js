@@ -1,8 +1,23 @@
 app.controller('homeController', function($scope) {
   angular.element(document).ready(function () {
     $(this).scrollTop(0);
-    $('.parallax').parallax();
-    $('.materialboxed').materialbox();
+    
+  });
+})
+
+app.controller('mattController', function($scope) {
+  angular.element(document).ready(function () {
+    $(this).scrollTop(0);
+
+  });
+})
+
+app.controller('contactController', function($scope) {
+  angular.element(document).ready(function () {
+    $(this).scrollTop(0);
+    $('input#input_text, textarea#contactTextArea').characterCounter();
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
   });
 })
 
@@ -30,14 +45,5 @@ app.controller('videosController', function($scope) {
     $("#videos-materialboxed-trigger-6").click(function() {
       $('#videos-materialboxed-6').materialbox().click();
     });
-  });
-})
-
-app.controller('contactController', function($scope) {
-  angular.element(document).ready(function () {
-    $(this).scrollTop(0);
-    $('input#input_text, textarea#contactTextArea').characterCounter();
-    $('.datepicker').datepicker();
-    $('.timepicker').timepicker();
   });
 })

@@ -10,6 +10,12 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
     controller: 'homeController',
     controllerAs: 'home'
   })
+  .state('matt', {
+    url: '/',
+    templateUrl: '/views/matt.html',
+    controller: 'mattController',
+    controllerAs: 'matt'
+  })
   .state('videos', {
     url: '/videos',
     templateUrl: '/views/videos.html',

@@ -117,7 +117,7 @@ nav ul a:focus {
 
 
 /* Body */
-.home-container, .videos-container, .contact-container {
+.home-container, .matt-container, .videos-container, .contact-container {
   min-height: 100vh;
 }
 

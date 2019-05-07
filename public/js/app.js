@@ -11,7 +11,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
     controllerAs: 'home'
   })
   .state('matt', {
-    url: '/',
+    url: '/matt',
     templateUrl: '/views/matt.html',
     controller: 'mattController',
     controllerAs: 'matt'

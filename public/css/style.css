@@ -1,20 +1,14 @@
-/* Global */
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   font-size: initial;
 }
-
 * {
   font-family: "Questrial" !important;
 }
-
-body {
-
-}
-
 nav {
   background-color: #448AFF !important;
 }
-
 h1 {
   color: #448AFF;
   margin: 2.8rem 0 1.875rem 0
@@ -24,21 +18,19 @@ h1 {
     font-size: 3.5rem !important;
   }
 }
-
 h5 {
   color: #6BA2FF;
 }
-
 .text-link:hover, .text-link:focus {
   text-decoration: underline;
 }
-
 .material-icons {
   font-family: 'Material Icons' !important;
 }
 
 
-/* Materialize-CSS Overrides */
+/* MaterializeCSS Overrides
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btn {
   background-color: #448AFF !important;
   min-width: 10rem;
@@ -95,11 +87,11 @@ h5 {
 }
 
 
-/* Nav */
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav ul a:focus {
   background-color: rgba(0,0,0,0.1);
 }
-
 .sidenav > li > .user-view > .background > img {
   width: 100%;
   height: 150%;
@@ -107,13 +99,11 @@ nav ul a:focus {
 .brand-logo {
   margin-left: 1%;
 }
-
 .brand-logo:hover, .brand-logo:focus {
   padding: 0 1rem;
   text-decoration: none;
   background-color: rgba(0,0,0,0.1);
 }
-
 @media only screen and (max-width: 992px) {
   .brand-logo {
     width: 100%;
@@ -121,21 +111,30 @@ nav ul a:focus {
 }
 
 
-/* Body */
+/* Body
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home-container, .matt-container, .videos-container, .contact-container {
   min-height: 100vh;
 }
 
+
+/* Home Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home-container .home-intro {
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
 }
+.home-text {
+  font-size: 1.1rem;
+}
 
+
+/* Videos Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .videos-container .materialboxed {
   width: 100%;
 }
-
 .card-materialboxed-trigger i {
   transition: 0.25s ease-in-out;
 }
@@ -145,7 +144,8 @@ nav ul a:focus {
 }
 
 
-/* Footer */
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
   background-color: #448AFF !important;
 }

@@ -7,15 +7,18 @@
   font-family: "Questrial" !important;
 }
 nav {
-  background-color: #448AFF !important;
+  background-color: #424242 !important;
+}
+body {
+  background-color: #F5F5F5;
 }
 h1 {
   color: #448AFF;
-  margin: 2.8rem 0 1.875rem 0
+  margin: 2.8rem 0 1.875rem 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
   h1 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
   }
 }
 h5 {
@@ -127,6 +130,9 @@ nav ul a:focus {
 }
 .home-text {
   font-size: 1.1rem;
+}
+.home-card-content {
+  overflow-y: scroll !important;
 }
 
 

@@ -92,8 +92,8 @@ h5 {
 
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav ul a:focus {
-  background-color: rgba(0,0,0,0.1);
+nav ul a:focus, nav ul a:hover {
+  background-color: rgba(0,0,0,0.75) !important;
 }
 .sidenav > li > .user-view > .background > img {
   width: 100%;
@@ -105,7 +105,7 @@ nav ul a:focus {
 .brand-logo:hover, .brand-logo:focus {
   padding: 0 1rem;
   text-decoration: none;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.75);
 }
 @media only screen and (max-width: 992px) {
   .brand-logo {

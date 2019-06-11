@@ -134,6 +134,18 @@ nav ul a:focus, nav ul a:hover {
 .home-card-content {
   overflow-y: scroll !important;
 }
+@media only screen and (max-width: 667px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-card {
+    order: 1;
+  }
+  .home-text {
+    order: 2;
+  }
+}
 
 
 /* Matt Page

@@ -36,15 +36,6 @@ app.controller('videosController', function($scope) {
     $("#videos-materialboxed-trigger-3").click(function() {
       $('#videos-materialboxed-3').materialbox().click();
     });
-    $("#videos-materialboxed-trigger-4").click(function() {
-      $('#videos-materialboxed-4').materialbox().click();
-    });
-    $("#videos-materialboxed-trigger-5").click(function() {
-      $('#videos-materialboxed-5').materialbox().click();
-    });
-    $("#videos-materialboxed-trigger-6").click(function() {
-      $('#videos-materialboxed-6').materialbox().click();
-    });
   });
 })
 

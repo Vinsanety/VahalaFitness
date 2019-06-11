@@ -155,8 +155,20 @@ nav ul a:focus, nav ul a:hover {
 
 /* Videos Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.videos-container .card {
+  height: 500px;
+}
 .videos-container .materialboxed {
   width: 100%;
+  height: 250px;
+}
+@media only screen and (max-width: 667px) {
+  .videos-container .card {
+    height: auto;
+  }
+  .videos-container .materialboxed {
+    height: 175px;
+  }
 }
 .card-materialboxed-trigger i {
   transition: 0.25s ease-in-out;

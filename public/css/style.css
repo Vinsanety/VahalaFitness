@@ -102,7 +102,7 @@ nav ul a:focus, nav ul a:hover {
 .brand-logo {
   margin-left: 1%;
 }
-.brand-logo:hover, .brand-logo:focus {
+.brand-logo:hover {
   padding: 0 1rem;
   text-decoration: none;
   background-color: rgba(0,0,0,0.75);

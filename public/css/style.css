@@ -116,7 +116,7 @@ nav ul a:focus, nav ul a:hover {
 
 /* Body
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.home-container, .matt-container, .videos-container, .contact-container {
+.home-container, .matt-container, .videos-container, .contact-container, .apex-container {
   min-height: 100vh;
 }
 
@@ -164,6 +164,24 @@ nav ul a:focus, nav ul a:hover {
 .card-materialboxed-trigger i:hover {
   color: blue;
   background-color: white;
+}
+
+
+/* Apex Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.apex-cta-btn .apex-btn {
+  color: #FFF;
+  background-color: #000 !important;
+}
+.apex-cta-btn .apex-btn:hover {
+  color: #000;
+  background-color: #FFF !important;
+}
+@media only screen and (max-width: 667px) {
+  .apex-logo {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
 }
 
 

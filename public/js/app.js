@@ -28,4 +28,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
     controller: 'contactController',
     controllerAs: 'contact'
   })
+  .state('apex', {
+    url: '/apex',
+    templateUrl: '/views/apex.html',
+    controller: 'apexController',
+    controllerAs: 'apex'
+  })
 }])

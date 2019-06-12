@@ -13,7 +13,8 @@ body {
   background-color: #F5F5F5;
 }
 h1 {
-  color: #448AFF;
+  font-family: "Roboto" !important;
+  color: #01579B;
   margin: 2.8rem 0 1.875rem 0;
 }
 @media only screen and (max-width: 667px) {
@@ -22,7 +23,10 @@ h1 {
   }
 }
 h5 {
-  color: #6BA2FF;
+  color: #1565C0;
+}
+.text-link {
+  color: #1565C0 !important;
 }
 .text-link:hover, .text-link:focus {
   text-decoration: underline;
@@ -35,13 +39,13 @@ h5 {
 /* MaterializeCSS Overrides
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btn {
-  background-color: #448AFF !important;
+  background-color: #01579B !important;
   min-width: 10rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 .btn:hover, .btn:focus {
-  color: #448AFF;
+  color: #01579B;
   background-color: #FFF !important;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19) !important;
 }
@@ -50,43 +54,43 @@ h5 {
 }
 /* label focus color */
 .input-field input:focus + label, .input-field textarea:focus + label {
- color: #448AFF !important;
+ color: #01579B !important;
 }
 /* label underline focus color */
 .input-field input:focus, .input-field textarea:focus {
- border-bottom: 1px solid #448AFF !important;
+ border-bottom: 1px solid #01579B !important;
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
- color: #448AFF !important;
+ color: #01579B !important;
 }
 /* datepicker */
 .datepicker-date-display {
-  background-color: #448AFF !important;
+  background-color: #01579B !important;
 }
 /* datepicker submit buttons */
 .is-selected, .datepicker-cancel, .datepicker-done {
-  color: #448AFF !important;
+  color: #01579B !important;
 }
 /* datepicker slected values */
 .is-today, .is-selected {
   color: #FFF !important;
-  background-color: #488AFF !important;
+  background-color: #01579B !important;
 }
 /* datepicker buttons */
 .month-prev:focus, .month-next:focus {
-  background-color: #448AFF !important;
+  background-color: #01579B !important;
 }
 /* datepicker dropdown */
 .dropdown-content span {
-  color: #488AFF !important;
+  color: #01579B !important;
 }
 /* timepicker background */
 .timepicker-digital-display, .time-picker-dial {
-  background-color: #488AFF !important;
+  background-color: #01579B !important;
 }
 .timepicker-close {
-  color: #488AFF !important;
+  color: #01579B !important;
 }
 
 
@@ -123,6 +127,10 @@ nav ul a:focus, nav ul a:hover {
 
 /* Home Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.home-vf-logo {
+  height: 3rem;
+  width: auto;
+}
 .home-container .home-intro {
   text-align: center;
   font-size: 1.2rem;
@@ -135,6 +143,10 @@ nav ul a:focus, nav ul a:hover {
   overflow-y: scroll !important;
 }
 @media only screen and (max-width: 667px) {
+  .home-vf-logo {
+    height: 2rem;
+    width: auto;
+  }
   .row {
     display: flex;
     flex-direction: column;
@@ -171,11 +183,12 @@ nav ul a:focus, nav ul a:hover {
   }
 }
 .card-materialboxed-trigger i {
+  background-color: #1565C0;
   transition: 0.25s ease-in-out;
 }
 .card-materialboxed-trigger i:hover {
-  color: blue;
-  background-color: white;
+  color: #1565C0;
+  background-color: #FFF;
 }
 
 
@@ -200,7 +213,7 @@ nav ul a:focus, nav ul a:hover {
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
-  background-color: #448AFF !important;
+  background-color: #01579B !important;
 }
 .footer-icon-link {
   display: inline-block;
@@ -216,4 +229,7 @@ footer {
 .footer-icon:hover {
   transition: all .2s ease-in-out;
   transform: scale(1.25);
+}
+.footer-copyright {
+  background-color: rgba(51,51,51,0.25) !important;
 }

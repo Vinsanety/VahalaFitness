@@ -139,9 +139,6 @@ nav ul a:focus, nav ul a:hover {
 .home-text {
   font-size: 1.1rem;
 }
-.home-card-content {
-  overflow-y: scroll !important;
-}
 @media only screen and (max-width: 667px) {
   .home-vf-logo {
     height: 2rem;

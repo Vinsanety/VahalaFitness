@@ -1,7 +1,9 @@
 app.controller('homeController', function($scope) {
   angular.element(document).ready(function () {
     $(this).scrollTop(0);
-
+    $(document).ready(function(){
+        $('.parallax').parallax();
+      });
   });
 })
 
@@ -36,12 +38,5 @@ app.controller('videosController', function($scope) {
     $("#videos-materialboxed-trigger-3").click(function() {
       $('#videos-materialboxed-3').materialbox().click();
     });
-  });
-})
-
-app.controller('apexController', function($scope) {
-  angular.element(document).ready(function () {
-    $(this).scrollTop(0);
-    $('.slider').slider();
   });
 })
